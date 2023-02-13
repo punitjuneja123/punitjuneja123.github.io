@@ -90,9 +90,10 @@
 }
 .heading {
   background-color: white;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   border-bottom: 4px solid rgb(186, 155, 112);
   width: fit-content;
+  color: rgb(102, 102, 102);
 }
 #user_details {
   background-color: white;
@@ -106,6 +107,77 @@
 #user-detail-intro {
   background-color: white;
   margin-top: 10px;
+}
+/* *****************************************************************skills section************************************************* */
+#skills {
+  padding: 50px 9%;
+  margin: auto;
+}
+#skillimgs {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+/* ***************************************************************project section *********************************************** */
+#projects {
+  background-color: white;
+  color: rgb(102, 102, 102);
+  padding: 50px 9%;
+  margin: auto;
+}
+#displayprojects {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.project-card {
+  background-color: white;
+  display: flex;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 30px;
+}
+.projectdis {
+  background-color: white;
+  width: 100%;
+  padding: 20px 30px;
+}
+.project-title {
+  margin-bottom: 20px;
+  background-color: white;
+}
+.projectdis p {
+  background-color: white;
+  margin-bottom: 10px;
+}
+.projectimg {
+  background-color: white;
+  max-height: 18vw;
+  min-height: 18vw;
+  max-width: 28vw;
+  min-width: 28vw;
+}
+.logodiv {
+  background-color: white;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.gitlogo {
+  background-color: white;
+  width: 40px;
+}
+.netlifylogo {
+  background-color: white;
+  width: 40px;
+}
+.gitlogo img :hover {
+  bottom: 1px solid;
 }
 /* *************************************************************Media query******************************************************* */
 @media (min-width: 700px) and (max-width: 800px) {
