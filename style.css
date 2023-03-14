@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(10, 25, 47);
+  font-family: "Poppins", sans-serif;
+}
+.heading {
+  color: rgb(197, 210, 254);
+}
+
+/* ************************************************home section******************************************************** */
+#home {
+  width: 85%;
+  margin: auto;
+  margin-top: 80px;
+}
+#home > div {
+  padding: 10% 0px;
+}
+#home > div > h2 {
+  color: rgb(225, 231, 253);
+  font-size: 4vw;
+}
+#home > div > h2 > img {
+  width: 5vw;
+}
+
+#home_Name {
+  color: rgb(197, 210, 254);
+  font-size: 7vw;
+}
+#home_Dis {
+  color: rgb(125, 145, 207);
+  font-size: 5vw;
+}
+
+/* ***********************************************About section******************************************************** */
+#about_main {
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+}
+
+#profile_img {
+  max-height: 20vw;
+  min-height: 20vw;
+  max-width: 20vw;
+  min-width: 20vw;
+  border: 5px solid rgb(89, 226, 197);
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#profile_img img {
+  max-height: 20vw;
+  min-height: 20vw;
+  max-width: 20vw;
+  min-width: 20vw;
+}
+
+#user_details {
+  width: 60%;
+}
+
+#user_details > h2 {
+  color: rgb(125, 145, 207);
+}
+
+#user_details > p {
+  color: rgb(123, 134, 162);
+}

@@ -6,287 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punit Juneja</title>
     <link
+      href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/nav.css" />
   </head>
   <body>
     <div id="container">
-      <!-- *****************************nav bar********************************** -->
-      <div id="nav-menu">
-        <div>
-          <h2>Punit Juneja</h2>
+      <!-- *************************************************nav bar********************************************************* -->
+      <nav id="nav-menu">
+        <div class="logo">
+          <h4>Punit Juneja</h4>
         </div>
-        <div>
-          <a href="#home" class="nav-link home">Home</a>
-          <a href="#about" class="nav-link about">About</a>
-          <a href="#skills" class="nav-link skills">Skills</a>
-          <a href="#projects" class="nav-link projects">Projects</a>
-          <a href="#contact" class="nav-link contact">Contacts</a>
-          <button class="nav-link resume">
-            <i class="fa fa-download" aria-hidden="true"></i> Resume
-          </button>
+        <ul class="nav-links">
+          <li><a class="nav-link home" href="#">Home</a></li>
+          <li><a class="nav-link about" href="#">About</a></li>
+          <li><a class="nav-link skills" href="#">Skills</a></li>
+          <li><a class="nav-link projects" href="#">Projects</a></li>
+          <li><a class="nav-link contact" href="#">Contact</a></li>
+          <li>
+            <a class="nav-link resume" href="#"><button>Resume</button></a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-      </div>
-      <!-- **************************Home section******************************** -->
+      </nav>
+      <!-- ************************************************Home section***************************************************** -->
       <div id="home">
-        <div id="image">
-          <img
-            class="home-img"
-            src="./images/Punit_juneja_img-removebg.jpg"
-            alt=""
-          />
-        </div>
-        <div id="intro">
-          <h1>
+        <div>
+          <h2>
             Hi
             <img
               src="https://em-content.zobj.net/source/microsoft-teams/337/waving-hand_1f44b.png"
               alt=""
             />
-          </h1>
-          <h1>I'm Punit Juneja</h1>
-          <h1>Full Stack Web Developer</h1>
+          </h2>
+          <h1 id="home_Name">I'm Punit Juneja</h1>
+          <h1 id="home_Dis">Full Stack Web Developer</h1>
         </div>
       </div>
-      <!-- *************************About Section******************************** -->
-      <div id="about" class="about section">
+      <!-- ***********************************************About section***************************************************** -->
+      <hr style="width: 40%; margin: auto; margin-top: 50px" />
+      <div id="about_main">
         <h1 class="heading">About Me</h1>
-        <div id="user_details">
-          <h2 id="user-detail-name">I'm Punit Juneja,</h2>
-          <p id="user-detail-intro">
-            A Solution-driven web developer with, the ability to learn and
-            collaborate in rapidly changing environments and compositions. Has
-            1200+ hours of experience in HTML, CSS, JS, and node. Eager to
-            tackle web development challenges to achieve lasting impacts on user
-            experience.
-          </p>
-        </div>
-      </div>
-      <!-- ****************************Skills************************************ -->
-      <div id="skills">
-        <h1 class="heading" style="background-color: rgb(247, 247, 247)">
-          Skills
-        </h1>
-        <div id="skillimgs">
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg"
-              alt=""
-            />
-            <p class="skills-card-name"></p>
+        <div div id="about" class="about section">
+          <div id="profile_img">
+            <img class="home-img" src="./images/Punit_juneja_img.jpg" alt="" />
           </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
-              alt=""
-            />
-            <p class="skills-card-name"></p>
+          <div id="user_details">
+            <h2 id="user-detail-name">I'm Punit Juneja,</h2>
+            <p id="user-detail-intro">
+              A Solution-driven web developer with, the ability to learn and
+              collaborate in rapidly changing environments and compositions. Has
+              1200+ hours of experience in HTML, CSS, JS, and node. Eager to
+              tackle web development challenges to achieve lasting impacts on
+              user experience.
+            </p>
           </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg"
-              alt=""
-            />
-            <p class="skills-card-name"></p>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"
-              alt=""
-            />
-            <p class="skills-card-name"></p>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              style="margin-bottom: 10px"
-              src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg"
-              alt=""
-            />
-            <p class="skills-card-name"></p>
-          </div>
-        </div>
-      </div>
-      <!-- ***************************projects*********************************** -->
-      <div id="projects">
-        <h1 class="heading">Projects</h1>
-        <div id="displayprojects">
-          <div class="project-card">
-            <img
-              class="projectimg"
-              src="./images/shopbag_screenshot.jpg"
-              alt=""
-            />
-            <div class="projectdis">
-              <h2 class="project-title">ShopBag</h2>
-              <p class="project-description">
-                Shopbag is a clone of paytm_mall, which is a product-based
-                website. From which one can shop for the desired product.
-              </p>
-              <p>An individual project built within a span of 5 days</p>
-              <p class="project-tech-stack">
-                <span style="font-weight: bolder; background-color: white"
-                  >Tech stack:</span
-                >
-                HTML, CSS, JavaScript, Node, Mongodb
-              </p>
-              <div class="logodiv">
-                <a
-                  class="project-github-link"
-                  href="https://github.com/punitjuneja123/damaged-regret-6465"
-                  ><img
-                    class="gitlogo"
-                    src="https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg"
-                    alt=""
-                /></a>
-                <a
-                  class="project-deployed-link"
-                  style="background-color: white"
-                  href="https://mellow-palmier-225434.netlify.app/"
-                  ><img
-                    class="netlifylogo"
-                    src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="projectimg"
-              src="./images/tripvillas_screenshot.jpg"
-              alt=""
-            />
-            <div class="projectdis">
-              <h2 class="project-title">Explorecity</h2>
-              <p class="project-description">
-                Explorecity is a Home Rental website. which is a clone of
-                Tripvillas and can browse through thousands of family owned
-                holiday homes and quaint homestays.
-              </p>
-              <p>Group project built within a span of 5 days</p>
-              <p class="project-tech-stack">
-                <span style="font-weight: bolder; background-color: white"
-                  >Tech stack:</span
-                >
-                HTML, CSS, JavaScript
-              </p>
-              <div class="logodiv">
-                <a
-                  class="project-github-link"
-                  href="https://github.com/rajesh1028/elegant-bed-6010"
-                  ><img
-                    class="gitlogo"
-                    src="https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg"
-                    alt=""
-                /></a>
-                <a
-                  class="project-deployed-link"
-                  style="background-color: white"
-                  href="https://lustrous-quokka-d5e991.netlify.app/"
-                  ><img
-                    class="netlifylogo"
-                    src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="projectimg"
-              src="./images/beautious_screenshot.jpg"
-              alt=""
-            />
-            <div class="projectdis">
-              <h2 class="project-title">Beautious</h2>
-              <p class="project-description">
-                Beautious is a clone of sephora.com, which deals in beauty
-                products,makeup and fragrence.
-              </p>
-              <p>An individual project built within a span of 5 days</p>
-              <p class="project-tech-stack">
-                <span style="font-weight: bolder; background-color: white"
-                  >Tech stack:</span
-                >
-                HTML, CSS, JavaScript
-              </p>
-              <div class="logodiv">
-                <a
-                  class="project-github-link"
-                  href="https://github.com/punitjuneja123/pleasant-lettuce-5002"
-                  ><img
-                    class="gitlogo"
-                    src="https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg"
-                    alt=""
-                /></a>
-                <a
-                  class="project-deployed-link"
-                  style="background-color: white"
-                  href="https://gorgeous-sunflower-bb9665.netlify.app/"
-                  ><img
-                    class="netlifylogo"
-                    src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="projectimg"
-              src="./images/beautious_screenshot.jpg"
-              alt=""
-            />
-            <div class="projectdis">
-              <h2 class="project-title">Beautious</h2>
-              <p class="project-description">
-                Beautious is a clone of sephora.com, which deals in beauty
-                products,makeup and fragrence.
-              </p>
-              <p>An individual project built within a span of 5 days</p>
-              <p class="project-tech-stack">
-                <span style="font-weight: bolder; background-color: white"
-                  >Tech stack:</span
-                >
-                HTML, CSS, JavaScript
-              </p>
-              <div class="logodiv">
-                <a
-                  class="project-github-link"
-                  href="https://github.com/punitjuneja123/pleasant-lettuce-5002"
-                  ><img
-                    class="gitlogo"
-                    src="https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg"
-                    alt=""
-                /></a>
-                <a
-                  class="project-deployed-link"
-                  style="background-color: white"
-                  href="https://gorgeous-sunflower-bb9665.netlify.app/"
-                  ><img
-                    class="netlifylogo"
-                    src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ***************************Contacts********************************** -->
-      <div id="contact">
-        <h1 class="heading">Contacts</h1>
-        <div id="contactdiv">
-          <div></div>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script src="index.js"></script>
