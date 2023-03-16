@@ -49,7 +49,7 @@
   height: 74vh;
 }
 
-#about {
+#about_inner {
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -278,6 +278,15 @@
 
 /* ************************************************ media Query ******************************************************** */
 
+#contact {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  min-height: 77vh;
+}
+
+/* ************************************************ media Query ******************************************************** */
+
 @media screen and (max-width: 768px) {
   /* ....................home...................... */
   #home > div > h2 {
@@ -294,7 +303,7 @@
     font-size: 8vw;
   }
   /* ....................about...................... */
-  #about {
+  #about_inner {
     flex-direction: column;
   }
   #profile_img {
