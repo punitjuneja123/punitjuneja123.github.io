@@ -7,16 +7,21 @@
 }
 .heading {
   color: rgb(197, 210, 254);
+  text-align: center;
+  margin-top: 50px;
 }
 
 /* ************************************************home section******************************************************** */
 #home {
   width: 85%;
   margin: auto;
+  height: 85vh;
   margin-top: 80px;
+  display: table;
 }
 #home > div {
-  padding: 10% 0px;
+  display: table-cell;
+  vertical-align: middle;
 }
 #home > div > h2 {
   color: rgb(225, 231, 253);
@@ -39,12 +44,15 @@
 #about_main {
   width: 75%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 40px;
+  height: 74vh;
 }
 
 #about {
+  height: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 #profile_img {
@@ -56,6 +64,7 @@
   font-size: 0;
   border-radius: 50%;
   overflow: hidden;
+  align-self: center;
 }
 
 #profile_img img {
@@ -66,13 +75,111 @@
 }
 
 #user_details {
-  width: 60%;
+  width: 50%;
+  align-self: center;
 }
 
 #user_details > h2 {
   color: rgb(125, 145, 207);
+  font-size: 3vw;
+  text-align: center;
 }
 
 #user_details > p {
   color: rgb(123, 134, 162);
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ***********************************************skills section******************************************************** */
+
+#skills_main {
+  width: 75%;
+  margin: auto;
+  margin-top: 40px;
+  height: 74vh;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  align-items: center;
+  gap: 20px;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.skills-card-img {
+  font-size: 120px;
+  align-self: center;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.skills-card-name {
+  color: rgb(125, 145, 207);
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.skills-card:hover {
+  background-color: rgb(46, 58, 82);
+}
+
+.skills-card:hover .skills-card-name {
+  transform: scale(1.05);
+  background-color: rgb(46, 58, 82);
+}
+.skills-card:hover .skills-card-img {
+  transform: scale(1.05);
+  background-color: rgb(46, 58, 82);
+}
+
+/* ************************************************ media Query ******************************************************** */
+
+@media screen and (max-width: 768px) {
+  /* ....................home...................... */
+  #home > div > h2 {
+    font-size: 7vw;
+  }
+  #home > div > h2 > img {
+    width: 8vw;
+  }
+
+  #home_Name {
+    font-size: 10vw;
+  }
+  #home_Dis {
+    font-size: 8vw;
+  }
+  /* ....................about...................... */
+  #about {
+    flex-direction: column;
+  }
+  #profile_img {
+    max-height: 30vw;
+    min-height: 30vw;
+    max-width: 30vw;
+    min-width: 30vw;
+  }
+  #profile_img img {
+    max-height: 30vw;
+    min-height: 30vw;
+    max-width: 30vw;
+    min-width: 30vw;
+  }
+  #user_details {
+    width: 80%;
+    margin-top: 30px;
+  }
+  #user_details > h2 {
+    color: rgb(125, 145, 207);
+    font-size: 5vw;
+  }
 }

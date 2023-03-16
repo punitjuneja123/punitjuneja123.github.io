@@ -12,7 +12,7 @@ nav {
 }
 
 .logo {
-  color: rgb(226, 226, 226);
+  color: rgb(89, 226, 197);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -71,6 +71,7 @@ nav {
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
+    background-color: #0000;
   }
 }
 
@@ -84,8 +85,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #0005;
-    backdrop-filter: blur(6px);
+    background-color: #0006;
     display: flex;
     flex-direction: column;
     align-items: center;
