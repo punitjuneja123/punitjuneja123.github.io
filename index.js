@@ -23,3 +23,10 @@ function navSlide() {
 }
 
 navSlide();
+
+// git calendar
+GitHubCalendar(".react-activity-calendar", "punitjuneja123", {
+  responsive: true,
+  // global_stats: false,
+  // tooltips: true,
+});

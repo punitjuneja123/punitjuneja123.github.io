@@ -9,6 +9,7 @@ nav {
   min-height: 8vh;
   background-color: #0005;
   backdrop-filter: blur(6px);
+  z-index: 1;
 }
 
 .logo {

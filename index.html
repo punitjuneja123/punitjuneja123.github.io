@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punit Juneja</title>
+    <!-- git calendar -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <!-- iconify -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <!-- font -->
     <link
       href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap"
       rel="stylesheet"
     />
+    <!-- stylesheet- nav & style  -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./style/nav.css" />
   </head>
@@ -21,11 +30,13 @@
           <h4>Punit Juneja</h4>
         </div>
         <ul class="nav-links">
-          <li><a class="nav-link home" href="#">Home</a></li>
-          <li><a class="nav-link about" href="#">About</a></li>
-          <li><a class="nav-link skills" href="#">Skills</a></li>
-          <li><a class="nav-link projects" href="#">Projects</a></li>
-          <li><a class="nav-link contact" href="#">Contact</a></li>
+          <li><a class="nav-link home" href="#home">Home</a></li>
+          <li><a class="nav-link about" href="#hdabout">About</a></li>
+          <li><a class="nav-link skills" href="#hdskills">Skills</a></li>
+          <li><a class="nav-link projects" href="#hdprojects">Projects</a></li>
+          <li>
+            <a class="nav-link contact" href="#hdcontact">Contact</a>
+          </li>
           <li>
             <a class="nav-link resume" href="#"><button>Resume</button></a>
           </li>
@@ -51,7 +62,8 @@
         </div>
       </div>
       <!-- ***********************************************About section***************************************************** -->
-      <h1 class="heading">About Me</h1>
+      <div id="hdabout"></div>
+      <h1 class="heading" id="hdabout">About Me</h1>
       <hr
         style="
           width: 20%;
@@ -78,6 +90,7 @@
         </div>
       </div>
       <!-- ***********************************************Skills section***************************************************** -->
+      <div id="hdskills"></div>
       <h1 class="heading">Skills</h1>
       <hr
         style="
@@ -134,6 +147,208 @@
           </div>
         </div>
       </div>
+      <!-- **********************************************Project section***************************************************** -->
+      <div id="hdprojects"></div>
+      <h1 class="heading">Projects</h1>
+      <hr
+        style="
+          width: 20%;
+          margin: auto;
+          margin-top: 10px;
+          border: 2px solid rgb(89, 226, 197);
+        "
+      />
+      <div id="projects">
+        <div id="displayprojects">
+          <div class="project-card">
+            <img
+              class="projectimg"
+              src="./images/shopbag_screenshot.jpg"
+              alt=""
+            />
+            <div class="projectdis">
+              <h2 class="project-title">ShopBag</h2>
+              <p class="project-description">
+                Shopbag is a clone of paytm_mall, which is a product-based
+                website. From which one can shop for the desired product.
+              </p>
+              <p>An individual project built within a span of 5 days</p>
+              <p class="project-tech-stack">
+                <span>Tech stack:</span>
+                HTML, CSS, JavaScript, Node, Mongodb
+              </p>
+              <div class="logodiv">
+                <a
+                  class="project-github-link"
+                  href="https://github.com/punitjuneja123/damaged-regret-6465"
+                  ><iconify-icon
+                    class="gitlogo"
+                    icon="lucide:github"
+                  ></iconify-icon
+                ></a>
+                <a
+                  class="project-deployed-link"
+                  href="https://mellow-palmier-225434.netlify.app/"
+                  ><iconify-icon
+                    class="netlifylogo"
+                    icon="ri:external-link-line"
+                  ></iconify-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="projectimg"
+              src="./images/tripvillas_screenshot.jpg"
+              alt=""
+            />
+            <div class="projectdis">
+              <h2 class="project-title">Explorecity</h2>
+              <p class="project-description">
+                Explorecity is a Home Rental website. which is a clone of
+                Tripvillas and can browse through thousands of family owned
+                holiday homes and quaint homestays.
+              </p>
+              <p>Group project built within a span of 5 days</p>
+              <p class="project-tech-stack">
+                <span>Tech stack:</span>
+                HTML, CSS, JavaScript
+              </p>
+              <div class="logodiv">
+                <a
+                  class="project-github-link"
+                  href="https://github.com/rajesh1028/elegant-bed-6010"
+                  ><iconify-icon
+                    class="gitlogo"
+                    icon="lucide:github"
+                  ></iconify-icon
+                ></a>
+                <a
+                  class="project-deployed-link"
+                  href="https://lustrous-quokka-d5e991.netlify.app/"
+                  ><iconify-icon
+                    class="netlifylogo"
+                    icon="ri:external-link-line"
+                  ></iconify-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="projectimg"
+              src="./images/beautious_screenshot.jpg"
+              alt=""
+            />
+            <div class="projectdis">
+              <h2 class="project-title">Beautious</h2>
+              <p class="project-description">
+                Beautious is a clone of sephora.com, which deals in beauty
+                products,makeup and fragrence.
+              </p>
+              <p>An individual project built within a span of 5 days</p>
+              <p class="project-tech-stack">
+                <span>Tech stack:</span>
+                HTML, CSS, JavaScript
+              </p>
+              <div class="logodiv">
+                <a
+                  class="project-github-link"
+                  href="https://github.com/punitjuneja123/pleasant-lettuce-5002"
+                  ><iconify-icon
+                    class="gitlogo"
+                    icon="lucide:github"
+                  ></iconify-icon
+                ></a>
+                <a
+                  class="project-deployed-link"
+                  href="https://gorgeous-sunflower-bb9665.netlify.app/"
+                  ><iconify-icon
+                    class="netlifylogo"
+                    icon="ri:external-link-line"
+                  ></iconify-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="projectimg"
+              src="./images/beautious_screenshot.jpg"
+              alt=""
+            />
+            <div class="projectdis">
+              <h2 class="project-title">Beautious</h2>
+              <p class="project-description">
+                Beautious is a clone of sephora.com, which deals in beauty
+                products,makeup and fragrence.
+              </p>
+              <p>An individual project built within a span of 5 days</p>
+              <p class="project-tech-stack">
+                <span>Tech stack:</span>
+                HTML, CSS, JavaScript
+              </p>
+              <div class="logodiv">
+                <a
+                  class="project-github-link"
+                  href="https://github.com/punitjuneja123/pleasant-lettuce-5002"
+                  ><iconify-icon
+                    class="gitlogo"
+                    icon="lucide:github"
+                  ></iconify-icon>
+                </a>
+                <a
+                  class="project-deployed-link"
+                  href="https://gorgeous-sunflower-bb9665.netlify.app/"
+                  ><iconify-icon
+                    class="netlifylogo"
+                    icon="ri:external-link-line"
+                  ></iconify-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *****************************************Github- calendar section*************************************************** -->
+      <h1 class="heading">Github Stats</h1>
+      <hr
+        style="
+          width: 20%;
+          margin: auto;
+          margin-top: 10px;
+          border: 2px solid rgb(89, 226, 197);
+        "
+      />
+      <div class="react-activity-calendar"></div>
+      <div id="stats_imgs">
+        <img
+          id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com?user=punitjuneja123&theme=transparent"
+        />
+        <img
+          id="github-top-langs"
+          src="https://github-readme-stats.vercel.app/api?username=punitjuneja123&show_icons=true&theme=transparent"
+          alt=""
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=punitjuneja123&layout=compact&theme=transparent"
+          alt=""
+        />
+      </div>
+      <!-- *****************************************Contact section*************************************************** -->
+      <div id="hdcontact"></div>
+      <h1 class="heading">Contact</h1>
+      <hr
+        style="
+          width: 20%;
+          margin: auto;
+          margin-top: 10px;
+          border: 2px solid rgb(89, 226, 197);
+        "
+      />
+      <div id="contact" class="nav-link contact"></div>
     </div>
   </body>
 </html>

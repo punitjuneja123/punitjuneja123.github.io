@@ -4,11 +4,12 @@
   box-sizing: border-box;
   background-color: rgb(10, 25, 47);
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 .heading {
   color: rgb(197, 210, 254);
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 /* ************************************************home section******************************************************** */
@@ -98,7 +99,7 @@
   width: 75%;
   margin: auto;
   margin-top: 40px;
-  height: 74vh;
+  min-height: 74vh;
 }
 
 #skills {
@@ -141,6 +142,140 @@
   background-color: rgb(46, 58, 82);
 }
 
+/* ************************************************ Projects section  ******************************************************** */
+
+#projects {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  min-height: 74vh;
+}
+
+#displayprojects {
+  margin: auto;
+  margin-top: 30px;
+}
+.project-card {
+  background-color: rgb(29, 70, 82);
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.projectdis {
+  background-color: rgb(29, 70, 82);
+  width: 100%;
+  padding: 20px 30px;
+  transition: 0.4s ease-in-out all;
+}
+.project-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(197, 210, 254);
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.projectdis p {
+  font-size: 19px;
+  margin-bottom: 10px;
+  color: rgb(123, 134, 162);
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.projectimg {
+  max-height: 20vw;
+  min-height: 20vw;
+  max-width: 30vw;
+  min-width: 30vw;
+  transition: 0.4s ease-in-out all;
+}
+.logodiv {
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.project-tech-stack > span {
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+  font-weight: bolder;
+  color: rgb(125, 145, 207);
+}
+.project-deployed-link {
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.project-github-link {
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.gitlogo {
+  color: white;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+  font-size: 40px;
+}
+.netlifylogo {
+  color: white;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+  font-size: 40px;
+}
+.gitlogo:hover {
+  transform: scale(1.2);
+}
+.netlifylogo:hover {
+  transform: scale(1.1);
+}
+.project-card:hover .projectdis {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .project-title {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .projectdis > p {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .projectimg {
+  transform: scale(1.05);
+}
+.project-card:hover .logodiv {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .netlifylogo {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .gitlogo {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .project-deployed-link {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .project-tech-stack > span {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .project-github-link {
+  background-color: rgb(46, 58, 82);
+}
+
+/* ************************************************ GitHub calendar ******************************************************** */
+
+.react-activity-calendar {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  color: white;
+}
+#stats_imgs {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
 /* ************************************************ media Query ******************************************************** */
 
 @media screen and (max-width: 768px) {
@@ -181,5 +316,20 @@
   #user_details > h2 {
     color: rgb(125, 145, 207);
     font-size: 5vw;
+  }
+  /* project */
+}
+
+@media screen and (max-width: 1420px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .projectimg {
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 50%;
+    min-height: 50%;
   }
 }
