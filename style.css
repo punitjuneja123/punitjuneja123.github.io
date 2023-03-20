@@ -284,10 +284,28 @@
 #contact {
   width: 70%;
   margin: auto;
-  margin-top: 40px;
-  min-height: 77vh;
+  min-height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+.contact_card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contact_card iconify-icon {
+  font-size: 4vw;
 }
 
+.contact_card a,
+p {
+  font-size: 20px;
+  color: rgb(197, 210, 254);
+}
 /* ************************************************ media Query ******************************************************** */
 
 @media screen and (max-width: 768px) {
@@ -304,6 +322,18 @@
   }
   #home_Dis {
     font-size: 8vw;
+  }
+  #contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact_card iconify-icon {
+    font-size: 5vw;
+  }
+
+  .contact_card a,
+  p {
+    font-size: 10px;
+    color: rgb(197, 210, 254);
   }
   /* ....................about...................... */
   #about_inner {
