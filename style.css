@@ -40,6 +40,27 @@
   color: rgb(125, 145, 207);
   font-size: 5vw;
 }
+#homeResumeBtnDiv {
+  width: 60%;
+  margin-top: 40px;
+  text-align: center;
+}
+#resume-link-2 > button {
+  color: rgb(89, 226, 197);
+  padding: 7px 8px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 24px;
+  border: 1px solid rgb(89, 226, 197);
+  background-color: #0000;
+  cursor: pointer;
+  transition: 0.4s ease-in-out all;
+}
+#resume-link-2 > button:hover {
+  transform: scale(1.05);
+  color: white;
+  background-color: rgb(89, 226, 197);
+}
 
 /* ***********************************************About section******************************************************** */
 #about_main {

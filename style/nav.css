@@ -54,6 +54,7 @@ nav {
   font-size: 14px;
   border: 1px solid rgb(89, 226, 197);
   background-color: #0000;
+  cursor: pointer;
 }
 
 .burger {

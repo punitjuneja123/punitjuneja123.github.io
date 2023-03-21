@@ -30,3 +30,22 @@ GitHubCalendar(".react-activity-calendar", "punitjuneja123", {
   // global_stats: false,
   // tooltips: true,
 });
+
+// resume download btn navbar
+let resumeDwn1 = document.querySelector("#resume-link-1");
+resumeDwn1.addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/17be1x7lBmygBI0IjFA4bvg7yMvQxmv1j/view?usp=sharing",
+    "_blank"
+  );
+});
+
+
+// resume download btn home section
+let resumeDwn2 = document.querySelector("#resume-link-2");
+resumeDwn2.addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/17be1x7lBmygBI0IjFA4bvg7yMvQxmv1j/view?usp=sharing",
+    "_blank"
+  );
+});
