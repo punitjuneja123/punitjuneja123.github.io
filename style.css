@@ -45,8 +45,7 @@
   margin-top: 40px;
   text-align: center;
 }
-#resume-button-2 > button {
-  color: rgb(89, 226, 197);
+#resume-button-2 {
   padding: 7px 8px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -55,6 +54,10 @@
   background-color: #0000;
   cursor: pointer;
   transition: 0.4s ease-in-out all;
+}
+#resume-button-2 > a {
+  color: rgb(89, 226, 197);
+  text-decoration: none;
 }
 #resume-link-2 > button:hover {
   transform: scale(1.05);
