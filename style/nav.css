@@ -46,8 +46,7 @@ nav {
   background-color: #0000;
 }
 
-.resume > button {
-  color: rgb(89, 226, 197);
+#resume-button-1 {
   padding: 7px 8px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -55,6 +54,10 @@ nav {
   border: 1px solid rgb(89, 226, 197);
   background-color: #0000;
   cursor: pointer;
+}
+#resume-link-1 {
+  color: rgb(89, 226, 197);
+  text-decoration: none;
 }
 
 .burger {
